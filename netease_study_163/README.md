@@ -1,5 +1,5 @@
 #说明
-[点击看效果](https://stephen-sun7.github.io/netease_study_163/index.html)
+[点击看效果](http://stephen-sun7.github.io/netease_study_163/index.html)
 
 ###1	功能点
 ####1.1	关闭顶部通知条
