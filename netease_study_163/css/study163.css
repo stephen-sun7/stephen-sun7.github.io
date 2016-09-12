@@ -19,7 +19,7 @@ del,ins,u,s,a,a:hover{text-decoration:none;}
 a,a:hover{color:#21a557;}
 a:hover{color:#21a557;text-decoration:underline;}
 input,textarea{outline:0;}
-body{background:#fff;font-family:'Microsoft YaHei',serif;font-size:14px;color:#333;outline:0;line-height: 1;}
+body{background:#fff;font-family:'Microsoft YaHei';font-size:14px;color:#333;outline:0;line-height: 1;}
 button:focus{outline:0;}
 /* 统一背景图 */
 .u-close,.u-closeIcon:before,.u-yesIcon:before,.u-weiboIcon:after,.m-sch .u-schIcon,.u-slidedot,.m-tab span.count,.m-rank span.count{background-image:url(../img/ui-sprite.png);background-repeat:no-repeat;}
