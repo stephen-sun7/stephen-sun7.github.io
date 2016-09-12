@@ -554,7 +554,7 @@ window.onload = function(){
 			url:'http://study.163.com/webDev/hotcouresByCategory.htm',
 			success:function(res){
 				var _listJson = JSON.parse(res);
-				console.log(_listJson);
+
 				_rankbox.innerHTML = '';
 				for(var i = 0, len = _listJson.length; i < len; i++){
 						_rankbox.innerHTML += _rankItem(_listJson[i]);
