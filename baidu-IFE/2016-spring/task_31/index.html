@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_31</title>
+	<style>
+	    *{
+	    	margin:0;
+	    	padding:0;
+	    	font-size: 22px;
+	    }
+	    #form{
+	    	width:550px;
+	    	margin:100px auto;
+	    }
+	    .radio{
+	    	display:inline-block;
+	    	margin-left:70px;
+	    	margin-right: 50px;
+	    }	   
+	    .select{
+	    	width:180px;
+	    	height:35px;
+	    	margin: 20px 15px;
+	    	font-size:16px;
+	    	background-color: #fff;
+	    	color:#555;
+			border-radius: 5px;
+			border:1px solid #a8a8a8;
+	    }
+	    .hide{
+	    	display:none;
+	    }
+	    .text{
+	    	width: 250px;
+			height: 35px;
+			margin-left: 15px;
+			font-size:20px;
+			border-radius: 5px;
+			border:1px solid #a8a8a8;
+	    }
+	    #outSchool{
+	    	margin-top: 20px;
+	    }
+	</style>
+</head>
+<body>
+    <div id="form">
+		<!-- 上部单选钮 -->
+		<div id="radio-select" onchange="radioChange()">   
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsradios" id="inSchoolRadio" checked> 在校生
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="optionsradios" id="outSchoolRadio"> 非在校生
+				</label>
+			</div>
+		</div>
+		<!-- 下部选择部分 -->
+		<div id="select-container">
+		    <!-- 在校生 -->
+			<div id="inSchool">
+				<span>学校</span>
+				<!-- onchange在元素值改变时触发，onchange 属性适用于：<input>、<textarea> 以及 <select> 元素 -->
+				<select class="select" id="select_1" onchange="selectChange()">
+					<option value="bj">北京</option>
+					<option value="tj">天津</option>
+					<option value="hb">河北</option>
+				</select>
+				<select class="select" id="select_2">
+					<option>北京大学</option>
+					<option>清华大学</option>
+					<option>北京理工大学</option>
+				</select>
+			</div>
+			<!-- 非在校生 -->
+			<div id="outSchool" class="hide">
+				<span>就业单位</span>
+				<input type="text" class="text">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	    var inSchoolRadio = document.getElementById("inSchoolRadio"),
+	        outSchoolRadio = document.getElementById("outSchoolRadio"),
+	        inschool = document.getElementById("inSchool"),
+	        outschool = document.getElementById("outSchool"),
+	        select_1 = document.getElementById("select_1"),
+	        select_2 = document.getElementById("select_2");
+        //单选纽判断函数 
+		function radioChange(){
+			if(inSchoolRadio.checked){
+				inschool.className = "";
+				outschool.className = "hide";
+			}else{
+                inSchool.className = "hide";
+                outschool.className = "";
+			}
+		}
+		// 地名选择器检查函数
+		function selectChange(){
+			var data = {
+				bj:["北京大学","清华大学","北京理工大学"],
+				tj:["天津大学","南开大学","天津师范大学"],
+				hb:["河北大学","燕山大学","河北电力大学"]
+			}
+			// select_1.options[]返回id为select_1的select元素中所有option的一个数组。
+			// select_1.selectedIndex表示当前选中的那一项。
+			var selected = select_1.options[select_1.selectedIndex].value;
+			select_2.innerHTML = "";
+			for(var i = 0; i < data[selected].length; i++){
+				// 每遍历一次，添加对应的option标签
+				// data[selected][i]表示data对象中当前选中项所对应数组中的第i项
+				select_2.innerHTML += "<option>" + data[selected][i] + "</option>";
+			}
+		}
+	</script>
+</body>
+</html>
