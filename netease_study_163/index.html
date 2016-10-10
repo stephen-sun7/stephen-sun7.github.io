@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<title>前端教育产品部</title>
-	<link type="text/css" rel="stylesheet" href="style/main.css">
-	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	</head>
 <body>
 	<!-- 头部标签 -->
@@ -17,22 +17,28 @@
 		    	    <a class="more" href="#">立即查看></a>
 		        </span>
 		        <span class="header-right">
-		    	    <a href="#"><img src="image/icon/closeTop.png" alt="关闭"></a>
+		    	    <a href="#"><img src="img/icon/closeTop.png" alt="关闭"></a>
 		    	    不再提醒
 		        </span>
 		    </div>
 	    </div>
 		<div class="header-mid f-clear">
 			<div class="midleft">
-				<img src="image/m-logo.png" alt="网易产品部">
-				<a class="act-icon">
-					<img src="image/icon/attAdd.png" alt="">
-					关注
-				</a>
+				<img src="img/m-logo.png" alt="网易教育产品部">
+				<div class="act-icon">
+					<a class="attention">
+						<img src="img/icon/attAdd.png" alt="">
+						关注
+					</a>
+					<span>粉丝45</span>
+				</div>
 				<div class="acted-icon">
-					<img src="image/icon/attRight.png" alt="">
-					已关注<span>|</span>
-                    <a class="cancer"> 取消</a>
+				    <div>
+						<img src="img/icon/attRight.png" alt="">
+						已关注<span>|</span>
+	                    <a class="cancer"> 取消</a>
+                    </div>
+                    <span>粉丝46</span>
 				</div>
 			</div>
 			<div class="midright">
@@ -43,10 +49,10 @@
 			<a href="javascript:;" class="find"></a>
 		</div>
 		<div id="header-ci">
-			<div id="image-move">
-			    <img src="image/banner1.jpg" alt="banner1" class="current">
-			    <img src="image/banner2.jpg" alt="banner2">
-			    <img src="image/banner3.jpg" alt="banner3">
+			<div id="img-move">
+			    <a href="http://open.163.com/" target="_blank"><img src="img/banner1.jpg" alt="banner1" class="current"></a>
+			    <a href="http://study.163.com/" target="_blank"><img src="img/banner2.jpg" alt="banner2"></a>
+			    <a href="http://icourse163.org/" target="_blank"><img src="img/banner3.jpg" alt="banner3"></a>
 			</div>
 			<div>
 		        <ul id="buttons">
@@ -58,7 +64,7 @@
 		</div>
 		<div class="header-cont">
 			<div class="intro">
-				<img class="imag1"src="image/icon/oclas.jpg" alt="网易公开课">
+				<img class="imag1"src="img/icon/oclas.jpg" alt="网易公开课">
 				<div>
 					<h2>网易公开课</h2>
 				    <P>推出国内外名校公开课，设计广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</P>
@@ -66,7 +72,7 @@
 			    </div>
 			</div>
 			<div class="intro">
-				<img class="imag2" src="image/icon/webclas.jpg" alt="云课题">
+				<img class="imag2" src="img/icon/webclas.jpg" alt="云课题">
 				<div class="div2">
 				    <h2>云课题</h2>
 				    <P>网易旗下大型大型在线学习平台，该平台面向学习者提供大量免费，优质课程，创新的个性化学习体验，自由开放的交流互动环境。</P>
@@ -74,7 +80,7 @@
 			    </div>
 			</div>
 			<div class="intro">
-				<img class="imag3"src="image/icon/MOOC.jpg" alt="中国大学MOOC">
+				<img class="imag3"src="img/icon/MOOC.jpg" alt="中国大学MOOC">
 				<div class="div3">
 				    <h2>中国大学MOOC</h2>
 				    <P>是爱课程网携手云课堂的在线学习平台，每一个有提升愿望的人都可以在这里学习中国最好的大学课程，学完能获得认证证书</P>
@@ -82,11 +88,11 @@
 			</div>
 		</div>
 		<div class="fiximg f-clear">
-			<div class="sImag"><img src="image/img1.jpg" alt=""></div>
-			<div class="sImag"><img src="image/img2.jpg" alt=""></div>
-			<div class="sImag"><img src="image/img3.jpg" alt=""></div>
-			<div class="sImag"><img src="image/img4.jpg" alt=""></div>
-			<div class="sImag"><img src="image/img5.jpg" alt=""></div>
+			<div class="sImag"><img src="img/img1.jpg" alt=""></div>
+			<div class="sImag"><img src="img/img2.jpg" alt=""></div>
+			<div class="sImag"><img src="img/img3.jpg" alt=""></div>
+			<div class="sImag"><img src="img/img4.jpg" alt=""></div>
+			<div class="sImag"><img src="img/img5.jpg" alt=""></div>
 		</div>
 	</div>
 	<div id="cont" class="f-clear">
@@ -96,24 +102,6 @@
 				<div>编程语言</div>
 			</div>
 			<div id="clEnd" class="f-clear">
-				<!-- <div class="clbox"> -->
-					<!-- <div class="smallbox"><a href="#" title=""><img src="image/img1.jpg" alt=""></a>
-					<h2>混音全揭秘</h2>
-					<span>音频帮</span>
-					<div><img src="image/icon/peopleIcon.png" alt=""><span>510</span></div>
-					<P>￥800</P>
-				    </div>
-					<div class="bigbox">
-					<a href="#" title=""><img src="image/img1.jpg" alt=""></a>
-					<div class="right">
-					<h2>混音全揭秘</h2>
-					<div><img src="image/icon/peopleIcon.png" alt=""><span>510</span></div>
-					<span>音频帮</span>
-				    <P>分类</P></div>
-					<div class="scrip"><P>顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶</P>
-					</div>
-				    </div> -->
-				<!-- </div> -->
 			</div>
 			<ul id="page">
 				<li><</li>
@@ -132,7 +120,7 @@
 			<div class="top"><h2>机构介绍</h2></div>
 			<div class="mid">
 				<P>观看下面的视频来了解吧 :</P>
-				<div><img src="image/play_sm.jpg" alt="图片加载失败"><img class="play"src="image/icon/playBtn_sm.png" alt="图片加载失败">
+				<div><img src="img/play_sm.jpg" alt="图片加载失败"><img class="play"src="img/icon/playBtn_sm.png" alt="图片加载失败">
 				</div>
 			</div>
 			<div class="end">
@@ -147,7 +135,7 @@
 	<div class="footer">
 		<div class="m-footer g-wrapper f-clear">
 			<div class="f-logo fl">
-				<img src="image/footerLogo.png" alt="EDU" />
+				<img src="img/footerLogo.png" alt="EDU" />
 				<p>©2014 icourse163.org 浙ICP备08114786号-1</p>
 				<p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
 			</div>
@@ -161,7 +149,7 @@
 				<p>我们:</p>
 				<a href="javascript:;" target="_blank">关于</a>
 				<a href="javascript:;" target="_blank">联系</a>
-				<a href="javascript:;" target="_blank">关注<img src="image/icon/weibo.png" alt="weibo" />
+				<a href="javascript:;" target="_blank">关注<img src="img/icon/weibo.png" alt="weibo" />
 				</a>
 			</div>
 			<div class="f-link f-link-3 fl">
@@ -171,7 +159,9 @@
 			</div>
 		</div>
 	</div>
+	<!-- 遮罩 -->
 	<div id="mask"></div>
+	<!-- 登录框 -->
 	<div id="login">
 		<h1>登录网易云课堂</h1>
 		<span></span>
@@ -179,13 +169,14 @@
 	    <input type="password" placeholder="密码">
 	    <button>登录</button>
     </div>
+    <!-- 视频播放窗口 -->
     <div id="videoPlay">
     	<h1>请观看下面的视频</h1>
 		<button id="closePlay" class="closePlay"></button>
-		<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width='890' height='595' poster="image/play_big.png" id="videoBtn" controls="true">
+		<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width='890' height='595' poster="img/play_big.png" id="videoBtn" controls="true">
 		</video>
     </div>
-	<script type="text/javascript" src="JS/main.js"></script>
-	<script type="text/javascript" src="JS/md5.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
 </body>
 </html>
